@@ -1,7 +1,7 @@
 def mooseca(argument):
     switcher = {
-        1: "January",
-        2: "February",
+        1: ["Rai 1", "test"],
+        2: ["Rai 2", "test2"],
         3: "March",
         4: "April",
         5: "May",
@@ -14,7 +14,7 @@ def mooseca(argument):
         12: "December"
     }
     for asd in switcher:
-        print(str(asd)+") "+switcher.get(asd))
+        print(str(asd)+") "+switcher[asd][0])
     print(switcher.get(argument, "Selezione non valida"))
 
 
