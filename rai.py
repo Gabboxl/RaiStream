@@ -26,7 +26,13 @@ def mooseca(argument):
         try:
             for asd in switcher:
                 print(str(asd)+") "+switcher[asd][0])
-            nums = int(input("Scegli un canale: "))
+            while True:
+                try:
+                    nums = int(input("Scegli un canale: "))
+                    break
+                except ValueError:
+                    print("Selezione non valida! Riprova.")
+                    continue
             if(nums == 0):
                 sys.exit(0)
             os.system("ffplay "+stream+switcher[nums][1])
