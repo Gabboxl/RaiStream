@@ -1,3 +1,6 @@
+import os
+import sys
+
 def mooseca(argument):
     stream = 'https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont='
     switcher = {
@@ -17,11 +20,20 @@ def mooseca(argument):
         14: ["Rai Scuola", "test2"],
         15: ["Rai Play Sport", "test2"],
         16: ["Rai Play Sport 1", "test2"],
+        0: ["Quit"]
     }
-    for asd in switcher:
-        print(str(asd)+") "+switcher[asd][0])
+    while(True):
+        try:
+            for asd in switcher:
+                print(str(asd)+") "+switcher[asd][0])
+            nums = input("Scegli un canale: ")
+            if(nums == 0):
+                sys.exit(0)
+            os.system("ffplay "+stream+switcher[int(nums)][1])
+        except KeyboardInterrupt:
+            sys.exit(0)
+            #input("\nWuoi ancora wardare films? ")
     print(switcher.get(argument, "Selezione non valida"))
 
 
-#mooseca(13)
 mooseca(4)
