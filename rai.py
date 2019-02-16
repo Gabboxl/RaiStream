@@ -29,6 +29,9 @@ def mooseca(argument):
             while True:
                 try:
                     nums = int(input("Scegli un canale: "))
+                    if(nums not in switcher):
+                        print("Selezione non valida! Riprova.")
+                        continue
                     break
                 except ValueError:
                     print("Selezione non valida! Riprova.")
