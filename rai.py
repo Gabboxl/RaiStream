@@ -20,7 +20,7 @@ def mooseca(argument):
         14: ["Rai Scuola", "24268"],
         15: ["Rai Play Sport", "9681540"],
         16: ["Rai Play Sport 1", "9681597"],
-        0: ["Quit"]
+        0: ["Esci"]
     }
     while(True):
         try:
@@ -28,6 +28,7 @@ def mooseca(argument):
                 print(str(asd)+") "+switcher[asd][0])
             while True:
                 try:
+
                     nums = int(input("Scegli un canale: "))
                     if(nums not in switcher):
                         print("Selezione non valida! Riprova.")
