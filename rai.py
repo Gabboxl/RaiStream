@@ -28,7 +28,6 @@ def mooseca(argument):
                 print(str(asd)+") "+switcher[asd][0])
             while True:
                 try:
-
                     nums = int(input("Scegli un canale: "))
                     if(nums not in switcher):
                         print("Selezione non valida! Riprova.")
