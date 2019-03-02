@@ -43,7 +43,6 @@ def mooseca():
         except KeyboardInterrupt:
             sys.exit(0)
             # input("\nWuoi ancora wardare films? ")
-    print(switcher.get(argument, "Selezione non valida"))
 
 
 mooseca()
