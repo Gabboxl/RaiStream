@@ -1,16 +1,15 @@
 # RaiStream
-----------------
-Wuarda la tv rAi comodamente in streaming da you'rs divano
+Guarda i canali Rai comodamente dal tuo pc
 
 ## Requisiti
+* python 3
 * `ffmpeg` (su win deve essere aggiunto a PATH)
-* ``
 
-## Usaggio
+## Utilizzo
 `python rai.py` && segui le instruzioni
 
 ## Da fare
-- [ ] premettere l'utenza di sciegliere tra diverse qualità' di video
-- [ ] prermettere l'utenza di usufruire di una documentazione featuring un'italiano + serio
+- [ ] permettere all'utenza di scegliere tra diverse qualità' dello stream
 
-*****funzia su windows*****
+
+**funziona su windows**
