@@ -39,7 +39,7 @@ def mooseca():
                     continue
             if nums == 0:
                 sys.exit(0)
-            os.system("ffplay " + stream + switcher[nums][1])
+            os.system("ffplay \"" + stream + switcher[nums][1] + "&output=16\"")
         except KeyboardInterrupt:
             sys.exit(0)
             # input("\nWuoi ancora wardare films? ")
