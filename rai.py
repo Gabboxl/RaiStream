@@ -6,21 +6,19 @@ def mooseca():
     stream = 'https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont='
     switcher = {
         1: ["Rai 1", "2606803"],
-        2: ["Rai 2", "180116"],
-        3: ["Rai 3", "180117"],
+        2: ["Rai 2", "308718"],
+        3: ["Rai 3", "1472284"],
         4: ["Rai 4", "746966"],
-        5: ["Rai 5", "72382"],
+        5: ["Rai 5", "395276"],
         6: ["Rai News24", "1"],
-        7: ["Rai Sport + HD", "4145"],
-        8: ["Rai Sport", "179975"],
-        9: ["Rai Movie", "72381"],
-        10: ["Rai Premium", "72383"],
-        11: ["Rai Yoyo", "72384"],
-        12: ["Rai Gulp", "4119"],
-        13: ["Rai Storia", "24269"],
-        14: ["Rai Scuola", "24268"],
-        15: ["Rai Play Sport", "9681540"],
-        16: ["Rai Play Sport 1", "9681597"],
+        7: ["Rai Sport + HD", "358025"],
+        8: ["Rai Sport", "358071"],
+        9: ["Rai Movie", "747002"],
+        10: ["Rai Premium", "746992"],
+        11: ["Rai Yoyo", "746899"],
+        12: ["Rai Gulp", "746953"],
+        13: ["Rai Storia", "746990"],
+        14: ["Rai Scuola", "747011"],
         0: ["Esci"]
     }
     while True:
